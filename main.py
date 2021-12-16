@@ -53,7 +53,7 @@ def request(origin_lat, origin_long, dest_lat, dest_long):
         data = json.loads(response.content)
         data = data["data"]
         service = data['prices']
-        print(service)
+        #print(service)
         m = int(10000000)
         for i in range(len(service)):
             final = int(service[i]['final'])
