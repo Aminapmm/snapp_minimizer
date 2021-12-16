@@ -2,8 +2,9 @@ from telegram.ext import Updater
 from telegram.ext import CallbackContext, CommandHandler, MessageHandler, Filters, ConversationHandler, \
     CallbackQueryHandler
 from telegram import Update, ReplyKeyboardMarkup, ForceReply, KeyboardButton, InlineKeyboardButton, InlineKeyboardMarkup
-
-TOKEN = '1253801548:AAFoh-hSRvG-6ZxXsLvRpRssVFAVYPy2rT8'
+import os
+#TOKEN = '1253801548:AAFoh-hSRvG-6ZxXsLvRpRssVFAVYPy2rT8'
+TOKEN = os.environ['TELEGRAM_TOKEN']
 bot_username = "@amineae772bot"
 
 updater = Updater(token=TOKEN, use_context=True)
